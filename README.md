@@ -4,8 +4,8 @@ This repository contains a front-end programming project without the use of CSS 
 
 The company Alambiccus SRI (**ALA**) was established to facilitate the interaction among Product Manufacturers (**CPR**), Product Producers (**PROD**), Certified Professionals (**CERT**) registered with the association, and Accredited Laboratories (**LAB**) for conducting material analysis / testing (**TEST**). ALA does not possess chemical or pharmaceutical expertise, but it offers an intermediation service among the various stakeholders, coordinating their activities and ensuring the traceability of the certification process, which is regulated and overseen by a Government Agency (**GOV**). ALA operates a web application through which the stakeholders interact according to the following high-level workflow, detailed further in the paragraphs concerning the functionalities of the various roles:
 
-* 1. Each CPR creates records for their PROD, indicating all characteristics.
-* 2. CPR initiates the PROD certification process, generating a request visible to GOV.
+1. Each CPR creates records for their PROD, indicating all characteristics.
+2. CPR initiates the PROD certification process, generating a request visible to GOV.
 3. GOV reviews the certification request and assigns it to a CERT as the responsible party.
 4. CERT sees the PROD in their management and plans the certification process.
 5. CERT prescribes a series of TESTs chosen from standardized types defined and approved by GOV.
