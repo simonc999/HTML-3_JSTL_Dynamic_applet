@@ -1,0 +1,11 @@
+Nella pagina sotto <%@ include file="middle.jspf"%> aggiungere
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+</table>
+       </td>  
+       <!-- SEZIONE PRINCIPALE DX  -->
+       <td width="40%" style="padding: 0px; border-left-width: 12px; border-right-width: 3px" >
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Dopo lo script della sezione sinistra

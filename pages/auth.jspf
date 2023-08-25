@@ -1,0 +1,48 @@
+<%-----------------------------------------------%>
+<%-- JSPF per il Controllo di Autorizzazione. --%>
+<%-----------------------------------------------%>
+<c:choose>
+    <%-- Se non sono autenticato si passa subito alla richiesta di autenticazione --%>
+
+    <c:when test="${empty user_userid}">
+        <c:set var="auth_denied" value="true"/>
+        <c:set var="auth_messaggio">
+                ${auth_messaggio}
+                </br>
+                Si prega di connettersi al sito per avere accesso.
+        </c:set>
+    </c:when>
+    
+    <c:otherwise>
+        <c:if test="${(!empty auth_cod_ruolo) && 
+                      (auth_cod_ruolo != user_cod_ruolo)}">
+            <c:set var="auth_denied" value="true"/>
+            <c:set var="auth_messaggio">
+                    ${auth_messaggio}
+                    </BR>
+                    L'accesso non e' consentito al ruolo di ${user_descrizione_ruolo}.
+            </c:set>
+        </c:if>
+      
+    </c:otherwise>
+    
+</c:choose>
+
+<%---------------------------------------------------------------------------%>
+<%---------------------------------------------------------------------------%>
+<%-- Se l'autorizzazione e' stata negata rimando alla pagina di autenticatione
+     (login.jsp).
+----------------------------------------------------------------------------%>
+
+<c:if test="${auth_denied == true}">
+    <jsp:forward page="login.jsp">
+        <jsp:param name="auth_page"
+                   value="${auth_page}" />
+        <jsp:param name="auth_messaggio"
+                   value="${auth_messaggio}" />
+    </jsp:forward>
+</c:if>
+
+<%--------------------- Altrimenti se tutto e' OK si procede con la
+    -------------------- funzionalita' della pagina.
+ -------------------------------------------------------------------------%>

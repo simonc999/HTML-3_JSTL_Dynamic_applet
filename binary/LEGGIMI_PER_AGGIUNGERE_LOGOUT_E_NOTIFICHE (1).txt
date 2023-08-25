@@ -1,0 +1,18 @@
+Nella pagina aggiungere
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+<form method="post" action="" ><td align="right" width="8%">
+ <!-- COMANDO NOTIFICA -->
+         <button style="border-color:#007171;background-color:#007171"><img style="width:60px;height:60px" src="bellnotifier.jpeg"></button></td></form>
+      <form method="post" action="" ><td width="8%">
+         <!-- COMANDO LOGOUT -->
+      <button style="border-color:#007171;background-color:#007171"><img style="width:60px;height:60px" src="logoutbutton.jpeg"></button></td></form>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Tra la sezione <%@ include file="top.jspf"%>
+e la sezione <%@ include file="middle.jspf"%>
+
+
+  
