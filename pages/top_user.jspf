@@ -1,0 +1,59 @@
+<HTML>
+   <HEAD>
+   </HEAD>
+
+<BODY>
+  <!-- MARGINE SUPERIORE    -->
+  <TABLE rules="none" cellpadding="3" cellspacing="0" border="0"
+         width="100%" height="13%" >
+     
+<%----------------------------------%>
+<%---QUERY CHE MI ESTRAE LA MAIL----%>
+<%----------------------------------%>
+
+<sql:query var="mail">
+select mail
+from UTENTE_RUOLO
+where username=?
+<sql:param value="${user_userid}"/>
+</sql:query>
+    
+
+   <tr  bgcolor="#008080">
+     <%------------------------%>   
+     <%--SE UTENTE E' LOGGATO--%>
+     <%------------------------%>   
+
+        <td align="left" valign="middle" width="20%" height="75"> 
+
+        <c:if test="${!empty user_userid}">
+             <font color="#9ad6d6">
+                <span style="font-family: arial">
+                 <i><b> UTENTE: <c:out value="${user_userid}"/>
+                 </b></i>
+                </span>
+             </font>
+             <br/>
+             
+             <font color="#9ad6d6">
+               <i><span style="font-family:arial">
+                   <b> RUOLO: <c:out value="${user_descrizione_ruolo}"/></b> 
+               </i></span>
+             </font>
+</br>
+         <font color="#9ad6d6">
+               <i><span style="font-family:arial">
+                   <b> E-MAIL: <c:out value="${mail.rows[0].mail}"/></b> 
+               </i></span>
+             </font>
+</br>
+          
+          </c:if>
+        </td>
+        <td align="right" valign="middle" width="20%" height="75"> 
+             <a href="dispatch.jsp">
+                  <img src="log.png" width="8%" align="center"/>          
+            <font color="#9ad6d6" style="font-family: arial"><b>Torna alla tua area riservata </b></font> 
+             </a> 
+         </td>   
+</tr>

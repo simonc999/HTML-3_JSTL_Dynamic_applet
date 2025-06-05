@@ -1,0 +1,27 @@
+<HTML>
+   <HEAD>
+   </HEAD>
+
+<BODY>
+  <!-- MARGINE SUPERIORE    -->
+  <TABLE rules="none" cellpadding="3" cellspacing="0" border="0"
+         width="100%" height="13%" >    
+
+   <tr  bgcolor="#008080">
+        
+      <!-- ACCEDI, REGISTRATI -->
+     
+        <td align="right" valign="middle" width="20%" height="75"> 
+             <a href="dispatch.jsp">
+                  <img src="log.png" width="4%" align="center">
+             <font color="#9ad6d6" style="font-family:arial"> <b>Accedi</b></font>  
+             </a>
+             &nbsp &nbsp
+             <a href="registrazione.jsp">
+                  <img src="regi.png" width="4%" align="center">
+             
+             <font color="#9ad6d6" style="font-family:arial"><b>Registrati</b></font>
+              </a>
+               &nbsp&nbsp
+        </td>
+   </tr>
